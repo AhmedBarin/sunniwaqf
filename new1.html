@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم طلب تأجير</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d9534f; /* Red color */
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"], input[type="tel"], input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #d9534f; /* Red color */
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c9302c; /* Darker red color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>تقديم طلب تأجير</h1>
+        <form action="https://script.google.com/macros/s/AKfycby8XM6ljuVkS8DKxe4DSuKaccy-PL2v0VnBdU5b9CLXrgIJtssZ3UZdVUg8EnUZ3z1b/exec" method="post">
+            <label for="name">الاسم كامل</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">البريد الالكتروني</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="property">محل/شقة/ارض رقم</label>
+            <input type="text" id="property" name="property" required>
+
+            <label for="building">مبني رقم</label>
+            <input type="text" id="building" name="building" required>
+
+            <label for="street">طريق/شارع/ممر</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="complex">مجمع رقم</label>
+            <input type="text" id="complex" name="complex" required>
+
+            <label for="area">المنطقة</label>
+            <input type="text" id="area" name="area" required>
+
+            <button type="submit">تقديم الطلب</button>
+        </form>
+    </div>
+</body>
+</html>
